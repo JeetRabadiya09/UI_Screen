@@ -770,71 +770,133 @@ class _EightScreenState extends State<EightScreen> {
             const SizedBox(
               height: 15,
             ),
-            Row(children: [
-              const SizedBox(
-                width: 19,
-              ),
-              Stack(
-                children: [
-                  Container(
-                    height: 85,
-                    width: 320,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(25),
-                      color: const Color(0xB01F4C6B),
-                    ),
-                    padding: const EdgeInsets.all(16),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Container(
-                          height: 53,
-                          width: 53,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(17),
-                            color: const Color(0x26000000),
+            Row(
+              children: [
+                const SizedBox(
+                  width: 19,
+                ),
+                Stack(
+                  children: [
+                    Container(
+                      height: 85,
+                      width: 320,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(25),
+                        color: const Color(0xB01F4C6B),
+                      ),
+                      padding: const EdgeInsets.all(16),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            height: 53,
+                            width: 53,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(17),
+                              color: const Color(0x26000000),
+                            ),
+                            padding: const EdgeInsets.all(13),
+                            child: Image.asset("assets/images8/star.png"),
                           ),
-                          padding: const EdgeInsets.all(13),
-                          child: Image.asset("assets/images8/star.png"),
-                        ),
-                        const SizedBox(
-                          width: 35,
-                        ),
-                      ],
+                          const SizedBox(
+                            width: 35,
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                  Positioned(
-                    top: 30,
-                    left: 85,
-                    child: Image.asset(
-                      "assets/images8/Star - Rating.png",
-                      height: 12,
-                      width: 68,
+                    Positioned(
+                      top: 30,
+                      left: 85,
+                      child: Image.asset(
+                        "assets/images8/Star - Rating.png",
+                        height: 12,
+                        width: 68,
+                      ),
                     ),
+                    const Positioned(
+                      top: 25,
+                      left: 160,
+                      child: Text("4.9",
+                          style: TextStyle(
+                              fontFamily: "Montserrat",
+                              fontSize: 18,
+                              color: Color(0xFF252B5C),
+                              fontWeight: FontWeight.bold)),
+                    ),
+                    const Positioned(
+                      top: 50,
+                      left: 85,
+                      child: Text("From 112 reviewers",
+                          style: TextStyle(
+                              fontFamily: "Raleway",
+                              fontSize: 10,
+                              color: Color(0xFF53587A),
+                              fontWeight: FontWeight.w400)),
+                    ),
+                    Positioned(
+                      top: 25,
+                      left: 230,
+                      child: Image.asset("assets/images8/Shape1.png",
+                          width: 30, height: 30),
+                    ),
+                    Positioned(
+                      top: 25,
+                      left: 250,
+                      child: Image.asset("assets/images8/Shape2.png",
+                          width: 30, height: 30),
+                    ),
+                    Positioned(
+                      top: 25,
+                      left: 270,
+                      child: Image.asset("assets/images8/Shape3.png",
+                          width: 30, height: 30),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Row(
+              children: [
+                const SizedBox(
+                  width: 19,
+                ),
+                Container(
+                  height: 128,
+                  width: 320,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(25),
+                    color: const Color(0xFFF5F4F8),
                   ),
-                  const Positioned(
-                    top: 25,
-                    left: 160,
-                    child: Text("4.9",
-                        style: TextStyle(
-                            fontFamily: "Montserrat",
-                            fontSize: 18,
-                            color: Color(0xFF252B5C),
-                            fontWeight: FontWeight.bold)),
+                  child: Column(
+                    children: [
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Row(
+                        children: [
+                          const SizedBox(
+                            width: 10,
+                          ),
+                          Image.asset("assets/images8/Shape4.png",
+                              height: 50, width: 50),
+                          const Text(
+                            "Kurt Mullins",
+                            style: TextStyle(
+                                fontFamily: "Raleway",
+                                fontSize: 14,
+                                color: Color(0xFF252B5C),
+                                fontWeight: FontWeight.bold),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
-                  const Positioned(
-                    top: 25,
-                    left: 160,
-                    child: Text("From 112 reviewers",
-                        style: TextStyle(
-                            fontFamily: "Montserrat",
-                            fontSize: 18,
-                            color: Color(0xFF53587A),
-                            fontWeight: FontWeight.w400)),
-                  )
-                ],
-              ),
-            ]),
+                ),
+              ],
+            ),
           ],
         ),
       ),

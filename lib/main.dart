@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:new_figma_screen/figma_screen/seven_figma_screen.dart';
+import 'package:new_figma_screen/figma_screen/eight_figma_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,9 +14,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.lightGreen,
       ),
-      home: const SevenScreen(),
+      home: const EightScreen(),
     );
   }
 }

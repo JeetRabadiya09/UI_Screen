@@ -882,16 +882,35 @@ class _EightScreenState extends State<EightScreen> {
                           ),
                           Image.asset("assets/images8/Shape4.png",
                               height: 50, width: 50),
-                          const Text(
-                            "Kurt Mullins",
-                            style: TextStyle(
-                                fontFamily: "Raleway",
-                                fontSize: 14,
-                                color: Color(0xFF252B5C),
-                                fontWeight: FontWeight.bold),
+                          const SizedBox(
+                            width: 12,
+                          ),
+                          const Padding(
+                            padding: EdgeInsets.only(bottom: 13),
+                            child: Text(
+                              "Kurt Mullins",
+                              style: TextStyle(
+                                  fontFamily: "Raleway",
+                                  fontSize: 14,
+                                  color: Color(0xFF252B5C),
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                          const Spacer(),
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 13),
+                            child: Image.asset(
+                                "assets/images8/Star - Rating1.png",
+                                width: 57),
+                          ),
+                          const SizedBox(
+                            width: 13,
                           ),
                         ],
                       ),
+                      const Column(
+                        children: [],
+                      )
                     ],
                   ),
                 ),

@@ -858,61 +858,240 @@ class _EightScreenState extends State<EightScreen> {
             const SizedBox(
               height: 20,
             ),
+            // Container(
+            //   margin: const EdgeInsets.only(left: 19, right: 20),
+            //   height: 138,
+            //   width: 320,
+            //   decoration: BoxDecoration(
+            //     borderRadius: BorderRadius.circular(25),
+            //     color: const Color(0xFFF5F4F8),
+            //   ),
+            //   child: Row(
+            //     children: [
+            //       Column(
+            //         children: [
+            //           const SizedBox(
+            //             height: 12,
+            //           ),
+            //           Image.asset(
+            //             "assets/images8/Shape4.png",
+            //             height: 50,
+            //           )
+            //         ],
+            //       ),
+            //       const SizedBox(
+            //         width: 11,
+            //       ),
+            //       const Column(
+            //         mainAxisAlignment: MainAxisAlignment.center,
+            //         crossAxisAlignment: CrossAxisAlignment.start,
+            //         children: [
+            //           SizedBox(
+            //             height: 09,
+            //           ),
+            //           Row(
+            //             children: [
+            //               Text(
+            //                 "Kurt Mullins",
+            //                 style: TextStyle(
+            //                     fontWeight: FontWeight.bold,
+            //                     fontFamily: "Raleway",
+            //                     fontSize: 15,
+            //                     color: Color(0xFF252B5C)),
+            //               ),
+            //               SizedBox(
+            //                 width: 94,
+            //               ),
+            //               Image(
+            //                 image:
+            //                     AssetImage("assets/images8/Star - Rating1.png"),
+            //                 width: 58,
+            //               ),
+            //             ],
+            //           ),
+            //           SizedBox(
+            //             height: 09,
+            //           ),
+            //
+            //           Text(
+            //             "Lorem ipsum dolor sit amet, consectetur\n",
+            //             style: TextStyle(
+            //                 color: Color(0xFF53587A),
+            //                 fontSize: 10,
+            //                 fontFamily: "Raleway",
+            //                 fontWeight: FontWeight.w400),
+            //           ),
+            //           // Row(
+            //           //   children: [
+            //           Text(
+            //             "adipiscing elit, sed do eiusmod tempor incididunt\n",
+            //             style: TextStyle(
+            //                 color: Color(0xFF53587A),
+            //                 fontSize: 10,
+            //                 fontFamily: "Raleway",
+            //                 fontWeight: FontWeight.w400),
+            //           ),
+            //           //   ],
+            //           // ),
+            //           Text(
+            //             "ut labore et dolore magna aliqua. ",
+            //             style: TextStyle(
+            //                 color: Color(0xFF53587A),
+            //                 fontSize: 10,
+            //                 fontFamily: "Raleway",
+            //                 fontWeight: FontWeight.w400),
+            //           ),
+            //           SizedBox(
+            //             height: 08,
+            //           ),
+            //           Text(
+            //             "8 Days ago",
+            //             style: TextStyle(
+            //                 color: Color(0xFFA1A5C1),
+            //                 fontSize: 08,
+            //                 fontFamily: "Montserrat",
+            //                 fontWeight: FontWeight.w400),
+            //             textAlign: TextAlign.start,
+            //           ),
+            //         ],
+            //       ),
+            //     ],
+            //   ),
+            // ),
+            const SizedBox(
+              height: 10,
+            ),
+            // Container(
+            //   margin: const EdgeInsets.only(left: 19, right: 20),
+            //   height: 138,
+            //   width: 320,
+            //   decoration: BoxDecoration(
+            //     borderRadius: BorderRadius.circular(25),
+            //     color: const Color(0xFFF5F4F8),
+            //   ),
+            //   child: Row(
+            //     children: [
+            //       KayFirst(
+            //         title: "Kurt Mullins",
+            //         image: "assets/images8/Shape5.png",
+            //         name:
+            //             "Lorem ipsum dolor sit amet, consectetur"),
+            //       SizedBox(height: 10,),
+            //
+            //     ],
+            //   ),
+            // ),
+            const SizedBox(
+              height: 10,
+            ),
             Row(
               children: [
                 const SizedBox(
                   width: 19,
                 ),
                 Container(
-                  height: 128,
+                  height: 50,
                   width: 320,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(25),
+                    borderRadius: BorderRadius.circular(15),
                     color: const Color(0xFFF5F4F8),
                   ),
-                  child: Column(
-                    children: [
-                      const SizedBox(
-                        height: 10,
+                  padding: const EdgeInsets.only(top: 19),
+                  child: const Text(
+                    "View all reviews",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontWeight: FontWeight.w600,
+                        fontFamily: "Rale way",
+                        fontSize: 11,
+                        color: Color(0xFF1F4C6B)),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 40,
+            ),
+            const Row(
+              children: [
+                SizedBox(
+                  width: 22,
+                ),
+                Text(
+                  "Nearby From this Location",
+                  style: TextStyle(
+                      color: Color(0xFF252B5C),
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: "Raleway"),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 23,
+            ),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const SizedBox(
+                  width: 17,
+                ),
+                Column(
+                  children: [
+                    Container(
+                      height: 231,
+                      width: 160,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(25),
+                        color: const Color(0xFFF5F4F8),
                       ),
-                      Row(
+                      child: Column(
                         children: [
                           const SizedBox(
-                            width: 10,
+                            height: 10,
                           ),
-                          Image.asset("assets/images8/Shape4.png",
-                              height: 50, width: 50),
-                          const SizedBox(
-                            width: 12,
-                          ),
-                          const Padding(
-                            padding: EdgeInsets.only(bottom: 13),
-                            child: Text(
-                              "Kurt Mullins",
-                              style: TextStyle(
-                                  fontFamily: "Raleway",
-                                  fontSize: 14,
-                                  color: Color(0xFF252B5C),
-                                  fontWeight: FontWeight.bold),
-                            ),
-                          ),
-                          const Spacer(),
-                          Padding(
-                            padding: const EdgeInsets.only(bottom: 13),
-                            child: Image.asset(
-                                "assets/images8/Star - Rating1.png",
-                                width: 57),
-                          ),
-                          const SizedBox(
-                            width: 13,
-                          ),
+                          Stack(
+                            children: [
+                              Image.asset(
+                                "assets/images8/s87.png",
+                                width: 144,
+                                height: 160,
+                              ),
+                              Positioned(
+                                top: 08,
+                                right: 08,
+                                child: Container(
+                                  width: 25,
+                                  height: 25,
+                                  decoration: const BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      color: Color(0xC7FFFFFF)),
+                                  padding: EdgeInsets.all(07),
+                                  child:
+                                      Image.asset("assets/images8/Heart.png"),
+                                ),
+                              ),
+                            ],
+                          )
                         ],
                       ),
-                      const Column(
-                        children: [],
-                      )
-                    ],
-                  ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  width: 07,
+                ),
+                Column(
+                  children: [
+                    Container(
+                      height: 249,
+                      width: 160,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(25),
+                        color: const Color(0xFFF5F4F8),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),

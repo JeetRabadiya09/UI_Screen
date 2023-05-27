@@ -17,9 +17,9 @@ class _ThirdScreenState extends State<ThirdScreen> {
           padding: const EdgeInsets.all(8.0),
           child: Column(
             children: [
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   // SizedBox(
                   //   height: 130,
                   // ),
@@ -66,15 +66,15 @@ class _ThirdScreenState extends State<ThirdScreen> {
                     border:
                         Border.all(width: 1.2, color: const Color(0xFFB7B7B7))),
                 padding: const EdgeInsets.all(07),
-                child: Column(
+                child: const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Row(
                       children: [
-                        const SizedBox(width: 10),
+                        SizedBox(width: 10),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               "Full Name",
                               style: TextStyle(
@@ -100,15 +100,15 @@ class _ThirdScreenState extends State<ThirdScreen> {
                     border:
                         Border.all(width: 1.2, color: const Color(0xFFB7B7B7))),
                 padding: const EdgeInsets.all(07),
-                child: Column(
+                child: const Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Row(
                       children: [
-                        const SizedBox(width: 10),
+                        SizedBox(width: 10),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               "Mobile Number",
                               style: TextStyle(
@@ -140,9 +140,9 @@ class _ThirdScreenState extends State<ThirdScreen> {
                     Row(
                       children: [
                         const SizedBox(width: 10),
-                        Column(
+                        const Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
+                          children: [
                             Text(
                               "Password",
                               style: TextStyle(
@@ -199,12 +199,12 @@ class _ThirdScreenState extends State<ThirdScreen> {
                 padding: const EdgeInsets.all(07),
                 height: 60,
                 width: 390,
-                child: Column(
+                child: const Column(
                   children: [
                     Row(
                       children: [
                         Column(
-                          children: const [
+                          children: [
                             SizedBox(
                               width: 330,
                             ),

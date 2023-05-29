@@ -858,129 +858,215 @@ class _EightScreenState extends State<EightScreen> {
             const SizedBox(
               height: 20,
             ),
-            // Container(
-            //   margin: const EdgeInsets.only(left: 19, right: 20),
-            //   height: 138,
-            //   width: 320,
-            //   decoration: BoxDecoration(
-            //     borderRadius: BorderRadius.circular(25),
-            //     color: const Color(0xFFF5F4F8),
-            //   ),
-            //   child: Row(
-            //     children: [
-            //       Column(
-            //         children: [
-            //           const SizedBox(
-            //             height: 12,
-            //           ),
-            //           Image.asset(
-            //             "assets/images8/Shape4.png",
-            //             height: 50,
-            //           )
-            //         ],
-            //       ),
-            //       const SizedBox(
-            //         width: 11,
-            //       ),
-            //       const Column(
-            //         mainAxisAlignment: MainAxisAlignment.center,
-            //         crossAxisAlignment: CrossAxisAlignment.start,
-            //         children: [
-            //           SizedBox(
-            //             height: 09,
-            //           ),
-            //           Row(
-            //             children: [
-            //               Text(
-            //                 "Kurt Mullins",
-            //                 style: TextStyle(
-            //                     fontWeight: FontWeight.bold,
-            //                     fontFamily: "Raleway",
-            //                     fontSize: 15,
-            //                     color: Color(0xFF252B5C)),
-            //               ),
-            //               SizedBox(
-            //                 width: 94,
-            //               ),
-            //               Image(
-            //                 image:
-            //                     AssetImage("assets/images8/Star - Rating1.png"),
-            //                 width: 58,
-            //               ),
-            //             ],
-            //           ),
-            //           SizedBox(
-            //             height: 09,
-            //           ),
-            //
-            //           Text(
-            //             "Lorem ipsum dolor sit amet, consectetur\n",
-            //             style: TextStyle(
-            //                 color: Color(0xFF53587A),
-            //                 fontSize: 10,
-            //                 fontFamily: "Raleway",
-            //                 fontWeight: FontWeight.w400),
-            //           ),
-            //           // Row(
-            //           //   children: [
-            //           Text(
-            //             "adipiscing elit, sed do eiusmod tempor incididunt\n",
-            //             style: TextStyle(
-            //                 color: Color(0xFF53587A),
-            //                 fontSize: 10,
-            //                 fontFamily: "Raleway",
-            //                 fontWeight: FontWeight.w400),
-            //           ),
-            //           //   ],
-            //           // ),
-            //           Text(
-            //             "ut labore et dolore magna aliqua. ",
-            //             style: TextStyle(
-            //                 color: Color(0xFF53587A),
-            //                 fontSize: 10,
-            //                 fontFamily: "Raleway",
-            //                 fontWeight: FontWeight.w400),
-            //           ),
-            //           SizedBox(
-            //             height: 08,
-            //           ),
-            //           Text(
-            //             "8 Days ago",
-            //             style: TextStyle(
-            //                 color: Color(0xFFA1A5C1),
-            //                 fontSize: 08,
-            //                 fontFamily: "Montserrat",
-            //                 fontWeight: FontWeight.w400),
-            //             textAlign: TextAlign.start,
-            //           ),
-            //         ],
-            //       ),
-            //     ],
-            //   ),
-            // ),
+            Container(
+              margin: const EdgeInsets.only(left: 19, right: 20),
+              height: 138,
+              width: 320,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(25),
+                color: const Color(0xFFF5F4F8),
+              ),
+              child: Row(
+                children: [
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Column(
+                    children: [
+                      const SizedBox(
+                        height: 12,
+                      ),
+                      Image.asset(
+                        "assets/images8/Shape4.png",
+                        height: 50,
+                      )
+                    ],
+                  ),
+                  const SizedBox(
+                    width: 11,
+                  ),
+                  const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(
+                        height: 09,
+                      ),
+                      Row(
+                        children: [
+                          Text(
+                            "Kurt Mullins",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontFamily: "Raleway",
+                                fontSize: 15,
+                                color: Color(0xFF252B5C)),
+                          ),
+                          SizedBox(
+                            width: 94,
+                          ),
+                          Image(
+                            image:
+                                AssetImage("assets/images8/Star - Rating1.png"),
+                            width: 58,
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 09,
+                      ),
+
+                      Text(
+                        "Lorem ipsum dolor sit amet, consectetur\n",
+                        style: TextStyle(
+                            color: Color(0xFF53587A),
+                            fontSize: 10,
+                            fontFamily: "Raleway",
+                            fontWeight: FontWeight.w400),
+                      ),
+                      // Row(
+                      //   children: [
+                      Text(
+                        "adipiscing elit, sed do eiusmod tempor incididunt\n",
+                        style: TextStyle(
+                            color: Color(0xFF53587A),
+                            fontSize: 10,
+                            fontFamily: "Raleway",
+                            fontWeight: FontWeight.w400),
+                      ),
+                      //   ],
+                      // ),
+                      Text(
+                        "ut labore et dolore magna aliqua. ",
+                        style: TextStyle(
+                            color: Color(0xFF53587A),
+                            fontSize: 10,
+                            fontFamily: "Raleway",
+                            fontWeight: FontWeight.w400),
+                      ),
+                      SizedBox(
+                        height: 08,
+                      ),
+                      Text(
+                        "8 Days ago",
+                        style: TextStyle(
+                            color: Color(0xFFA1A5C1),
+                            fontSize: 08,
+                            fontFamily: "Montserrat",
+                            fontWeight: FontWeight.w400),
+                        textAlign: TextAlign.start,
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
             const SizedBox(
               height: 10,
             ),
-            // Container(
-            //   margin: const EdgeInsets.only(left: 19, right: 20),
-            //   height: 138,
-            //   width: 320,
-            //   decoration: BoxDecoration(
-            //     borderRadius: BorderRadius.circular(25),
-            //     color: const Color(0xFFF5F4F8),
-            //   ),
-            //   child: Row(
-            //     children: [
-            //       KayFirst(
-            //         title: "Kurt Mullins",
-            //         image: "assets/images8/Shape5.png",
-            //         name:
-            //             "Lorem ipsum dolor sit amet, consectetur"),
-            //       SizedBox(height: 10,),
-            //
-            //     ],
-            //   ),
-            // ),
+            Container(
+              margin: const EdgeInsets.only(left: 19, right: 20),
+              height: 138,
+              width: 320,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(25),
+                color: const Color(0xFFF5F4F8),
+              ),
+              child: Row(
+                children: [
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Column(
+                    children: [
+                      const SizedBox(
+                        height: 12,
+                      ),
+                      Image.asset(
+                        "assets/images8/Shape5.png",
+                        height: 50,
+                      )
+                    ],
+                  ),
+                  const SizedBox(
+                    width: 11,
+                  ),
+                  const Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(
+                        height: 09,
+                      ),
+                      Row(
+                        children: [
+                          Text(
+                            "Kay Swanson",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontFamily: "Raleway",
+                                fontSize: 15,
+                                color: Color(0xFF252B5C)),
+                          ),
+                          SizedBox(
+                            width: 85,
+                          ),
+                          Image(
+                            image:
+                                AssetImage("assets/images8/Star - Rating2.png"),
+                            width: 58,
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 09,
+                      ),
+
+                      Text(
+                        "Sed ut perspiciatis unde omnis iste natus error sit\n",
+                        style: TextStyle(
+                            color: Color(0xFF53587A),
+                            fontSize: 10,
+                            fontFamily: "Raleway",
+                            fontWeight: FontWeight.w400),
+                      ),
+                      // Row(
+                      //   children: [
+                      Text(
+                        "voluptatem accusantium doloremque laudantium,\n",
+                        style: TextStyle(
+                            color: Color(0xFF53587A),
+                            fontSize: 10,
+                            fontFamily: "Raleway",
+                            fontWeight: FontWeight.w400),
+                      ),
+                      //   ],
+                      // ),
+                      Text(
+                        "totam rem aperia.",
+                        style: TextStyle(
+                            color: Color(0xFF53587A),
+                            fontSize: 10,
+                            fontFamily: "Raleway",
+                            fontWeight: FontWeight.w400),
+                      ),
+                      SizedBox(
+                        height: 08,
+                      ),
+                      Text(
+                        "12 Days ago",
+                        style: TextStyle(
+                            color: Color(0xFFA1A5C1),
+                            fontSize: 08,
+                            fontFamily: "Montserrat",
+                            fontWeight: FontWeight.w400),
+                        textAlign: TextAlign.start,
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
             const SizedBox(
               height: 10,
             ),
@@ -1066,13 +1152,274 @@ class _EightScreenState extends State<EightScreen> {
                                   decoration: const BoxDecoration(
                                       shape: BoxShape.circle,
                                       color: Color(0xC7FFFFFF)),
-                                  padding: EdgeInsets.all(07),
+                                  padding: const EdgeInsets.all(07),
                                   child:
                                       Image.asset("assets/images8/Heart.png"),
                                 ),
                               ),
+                              Positioned(
+                                bottom: 08,
+                                left: 10,
+                                child: Container(
+                                  height: 25,
+                                  width: 25,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(8),
+                                      color: const Color(0xB03F467C)),
+                                  padding: const EdgeInsets.all(06),
+                                  child:
+                                      Image.asset("assets/images8/Text5.png"),
+                                ),
+                              ),
+                              Positioned(
+                                bottom: 08,
+                                right: 10,
+                                child: Container(
+                                  height: 25,
+                                  width: 75,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(8),
+                                      color: const Color(0xB03F467C)),
+                                  child: const Row(
+                                    children: [
+                                      SizedBox(
+                                        width: 08,
+                                      ),
+                                      Text(
+                                        "\$ 220",
+                                        style: TextStyle(
+                                          color: Color(0xFFF5F4F8),
+                                          fontSize: 12,
+                                          fontFamily: "Montserrat",
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                      Text(
+                                        "/month",
+                                        style: TextStyle(
+                                          color: Color(0xFFF5F4F8),
+                                          fontSize: 06,
+                                          fontFamily: "Montserrat",
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
                             ],
-                          )
+                          ),
+                          const SizedBox(
+                            height: 12,
+                          ),
+                          const Row(
+                            children: [
+                              SizedBox(
+                                width: 15,
+                              ),
+                              Text(
+                                "Wings Tower",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: "Raleway",
+                                    fontSize: 12,
+                                    color: Color(0xFF252B5C)),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Row(
+                            children: [
+                              const SizedBox(
+                                width: 15,
+                              ),
+                              Image.asset("assets/images8/Vector5.png",
+                                  height: 7, width: 8),
+                              const SizedBox(
+                                width: 03,
+                              ),
+                              const Text(
+                                "4.2",
+                                style: TextStyle(
+                                    color: Color(0xFF53587A),
+                                    fontSize: 8,
+                                    fontFamily: "Montserrat",
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              const SizedBox(
+                                width: 07,
+                              ),
+                              Image.asset(
+                                "assets/images8/225.png",
+                                width: 9,
+                                height: 9,
+                              ),
+                              const SizedBox(
+                                width: 03,
+                              ),
+                              const Text(
+                                "Jakarta, Indonesia",
+                                style: TextStyle(
+                                    color: Color(0xFF53587A),
+                                    fontSize: 8,
+                                    fontFamily: "Raleway",
+                                    fontWeight: FontWeight.w400),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Container(
+                      height: 231,
+                      width: 160,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(25),
+                        color: const Color(0xFFF5F4F8),
+                      ),
+                      child: Column(
+                        children: [
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Stack(
+                            children: [
+                              Image.asset(
+                                "assets/images8/S89.png",
+                                width: 144,
+                                height: 160,
+                              ),
+                              Positioned(
+                                top: 08,
+                                right: 08,
+                                child: Container(
+                                  width: 25,
+                                  height: 25,
+                                  decoration: const BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      color: Color(0xB3FD4ABB)),
+                                  padding: const EdgeInsets.all(07),
+                                  child:
+                                      Image.asset("assets/images8/Vector3.png"),
+                                ),
+                              ),
+                              Positioned(
+                                bottom: 08,
+                                left: 10,
+                                child: Container(
+                                  height: 25,
+                                  width: 25,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(8),
+                                      color: const Color(0xB03F467C)),
+                                  padding: const EdgeInsets.all(06),
+                                  child:
+                                      Image.asset("assets/images8/Text5.png"),
+                                ),
+                              ),
+                              Positioned(
+                                bottom: 08,
+                                right: 10,
+                                child: Container(
+                                  height: 25,
+                                  width: 75,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(8),
+                                      color: const Color(0xB03F467C)),
+                                  child: const Row(
+                                    children: [
+                                      SizedBox(
+                                        width: 08,
+                                      ),
+                                      Text(
+                                        "\$ 220",
+                                        style: TextStyle(
+                                          color: Color(0xFFF5F4F8),
+                                          fontSize: 12,
+                                          fontFamily: "Montserrat",
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                      Text(
+                                        "/month",
+                                        style: TextStyle(
+                                          color: Color(0xFFF5F4F8),
+                                          fontSize: 06,
+                                          fontFamily: "Montserrat",
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(
+                            height: 12,
+                          ),
+                          const Row(
+                            children: [
+                              SizedBox(
+                                width: 15,
+                              ),
+                              Text(
+                                "Wings Tower",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: "Raleway",
+                                    fontSize: 12,
+                                    color: Color(0xFF252B5C)),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Row(
+                            children: [
+                              const SizedBox(
+                                width: 15,
+                              ),
+                              Image.asset("assets/images8/Vector5.png",
+                                  height: 7, width: 8),
+                              const SizedBox(
+                                width: 03,
+                              ),
+                              const Text(
+                                "4.2",
+                                style: TextStyle(
+                                    color: Color(0xFF53587A),
+                                    fontSize: 8,
+                                    fontFamily: "Montserrat",
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              const SizedBox(
+                                width: 07,
+                              ),
+                              Image.asset(
+                                "assets/images8/225.png",
+                                width: 9,
+                                height: 9,
+                              ),
+                              const SizedBox(
+                                width: 03,
+                              ),
+                              const Text(
+                                "Jakarta, Indonesia",
+                                style: TextStyle(
+                                    color: Color(0xFF53587A),
+                                    fontSize: 8,
+                                    fontFamily: "Raleway",
+                                    fontWeight: FontWeight.w400),
+                              ),
+                            ],
+                          ),
                         ],
                       ),
                     ),
@@ -1089,6 +1436,315 @@ class _EightScreenState extends State<EightScreen> {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(25),
                         color: const Color(0xFFF5F4F8),
+                      ),
+                      child: Column(
+                        children: [
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Stack(
+                            children: [
+                              Image.asset(
+                                "assets/images8/s88.png",
+                                width: 144,
+                                height: 160,
+                              ),
+                              Positioned(
+                                top: 08,
+                                right: 08,
+                                child: Container(
+                                  width: 25,
+                                  height: 25,
+                                  decoration: const BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      color: Color(0xC7FFFFFF)),
+                                  padding: const EdgeInsets.all(07),
+                                  child:
+                                      Image.asset("assets/images8/Heart.png"),
+                                ),
+                              ),
+                              Positioned(
+                                bottom: 08,
+                                left: 10,
+                                child: Container(
+                                  height: 25,
+                                  width: 25,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(8),
+                                      color: const Color(0xB03F467C)),
+                                  padding: const EdgeInsets.all(06),
+                                  child:
+                                      Image.asset("assets/images8/Text5.png"),
+                                ),
+                              ),
+                              Positioned(
+                                bottom: 08,
+                                right: 10,
+                                child: Container(
+                                  height: 25,
+                                  width: 75,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(8),
+                                      color: const Color(0xB03F467C)),
+                                  child: const Row(
+                                    children: [
+                                      SizedBox(
+                                        width: 08,
+                                      ),
+                                      Text(
+                                        "\$ 190",
+                                        style: TextStyle(
+                                          color: Color(0xFFF5F4F8),
+                                          fontSize: 12,
+                                          fontFamily: "Montserrat",
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                      Text(
+                                        "/month",
+                                        style: TextStyle(
+                                          color: Color(0xFFF5F4F8),
+                                          fontSize: 06,
+                                          fontFamily: "Montserrat",
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(
+                            height: 12,
+                          ),
+                          const Row(
+                            children: [
+                              SizedBox(
+                                width: 15,
+                              ),
+                              Text(
+                                "Sky Dandelions",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: "Raleway",
+                                    fontSize: 12,
+                                    color: Color(0xFF252B5C)),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(
+                            height: 03,
+                          ),
+                          const Row(
+                            children: [
+                              SizedBox(
+                                width: 15,
+                              ),
+                              Text(
+                                "Apartment",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: "Raleway",
+                                    fontSize: 12,
+                                    color: Color(0xFF252B5C)),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Row(
+                            children: [
+                              const SizedBox(
+                                width: 15,
+                              ),
+                              Image.asset("assets/images8/Vector5.png",
+                                  height: 7, width: 8),
+                              const SizedBox(
+                                width: 03,
+                              ),
+                              const Text(
+                                "4.9",
+                                style: TextStyle(
+                                    color: Color(0xFF53587A),
+                                    fontSize: 8,
+                                    fontFamily: "Montserrat",
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              const SizedBox(
+                                width: 07,
+                              ),
+                              Image.asset(
+                                "assets/images8/225.png",
+                                width: 9,
+                                height: 9,
+                              ),
+                              const SizedBox(
+                                width: 03,
+                              ),
+                              const Text(
+                                "Jakarta, Indonesia",
+                                style: TextStyle(
+                                    color: Color(0xFF53587A),
+                                    fontSize: 8,
+                                    fontFamily: "Raleway",
+                                    fontWeight: FontWeight.w400),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Container(
+                      height: 231,
+                      width: 160,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(25),
+                        color: const Color(0xFFF5F4F8),
+                      ),
+                      child: Column(
+                        children: [
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Stack(
+                            children: [
+                              Image.asset(
+                                "assets/images8/S810.png",
+                                width: 144,
+                                height: 160,
+                              ),
+                              Positioned(
+                                top: 08,
+                                right: 08,
+                                child: Container(
+                                  width: 25,
+                                  height: 25,
+                                  decoration: const BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      color: Color(0xC7FFFFFF)),
+                                  padding: const EdgeInsets.all(07),
+                                  child:
+                                      Image.asset("assets/images8/Heart.png"),
+                                ),
+                              ),
+                              Positioned(
+                                bottom: 08,
+                                left: 10,
+                                child: Container(
+                                  height: 25,
+                                  width: 25,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(8),
+                                      color: const Color(0xB03F467C)),
+                                  padding: const EdgeInsets.all(06),
+                                  child:
+                                      Image.asset("assets/images8/Text5.png"),
+                                ),
+                              ),
+                              Positioned(
+                                bottom: 08,
+                                right: 10,
+                                child: Container(
+                                  height: 25,
+                                  width: 75,
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(8),
+                                      color: const Color(0xB03F467C)),
+                                  child: const Row(
+                                    children: [
+                                      SizedBox(
+                                        width: 08,
+                                      ),
+                                      Text(
+                                        "\$ 220",
+                                        style: TextStyle(
+                                          color: Color(0xFFF5F4F8),
+                                          fontSize: 12,
+                                          fontFamily: "Montserrat",
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                      Text(
+                                        "/month",
+                                        style: TextStyle(
+                                          color: Color(0xFFF5F4F8),
+                                          fontSize: 06,
+                                          fontFamily: "Montserrat",
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(
+                            height: 12,
+                          ),
+                          const Row(
+                            children: [
+                              SizedBox(
+                                width: 15,
+                              ),
+                              Text(
+                                "Wings Tower",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: "Raleway",
+                                    fontSize: 12,
+                                    color: Color(0xFF252B5C)),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Row(
+                            children: [
+                              const SizedBox(
+                                width: 15,
+                              ),
+                              Image.asset("assets/images8/Vector5.png",
+                                  height: 7, width: 8),
+                              const SizedBox(
+                                width: 03,
+                              ),
+                              const Text(
+                                "4.2",
+                                style: TextStyle(
+                                    color: Color(0xFF53587A),
+                                    fontSize: 8,
+                                    fontFamily: "Montserrat",
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              const SizedBox(
+                                width: 07,
+                              ),
+                              Image.asset(
+                                "assets/images8/225.png",
+                                width: 9,
+                                height: 9,
+                              ),
+                              const SizedBox(
+                                width: 03,
+                              ),
+                              const Text(
+                                "Jakarta, Indonesia",
+                                style: TextStyle(
+                                    color: Color(0xFF53587A),
+                                    fontSize: 8,
+                                    fontFamily: "Raleway",
+                                    fontWeight: FontWeight.w400),
+                              ),
+                            ],
+                          ),
+                        ],
                       ),
                     ),
                   ],

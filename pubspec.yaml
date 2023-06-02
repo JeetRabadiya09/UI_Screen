@@ -68,6 +68,7 @@ flutter:
     - assets/images6/
     - assets/images7/
     - assets/images8/
+    - assets/images9/
 
 
 
@@ -110,6 +111,14 @@ flutter:
     - family: Raleway
       fonts:
         - asset: assets/Fonts/Raleway-SemiBold.ttf
+
+    - family: Futura Std
+      fonts:
+        - asset: assets/Fonts/FuturaStd-Bold.otf
+
+    - family: Sofia Sans
+      fonts:
+        - asset: assets/Fonts/SofiaSans-Bold.ttf
 
 
 

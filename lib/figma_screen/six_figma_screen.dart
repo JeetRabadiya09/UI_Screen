@@ -98,8 +98,8 @@ class _SixScreenState extends State<SixScreen> {
                                     fontFamily: "OpenSans_Condensed"),
                               ),
                               const Spacer(),
-                              Column(
-                                children: const [
+                              const Column(
+                                children: [
                                   Text(
                                     "5",
                                     style: TextStyle(
@@ -133,8 +133,8 @@ class _SixScreenState extends State<SixScreen> {
                               ),
                             ],
                           ),
-                          Row(
-                            children: const [
+                          const Row(
+                            children: [
                               Spacer(),
                               Text("174 Ratings",
                                   style: TextStyle(
@@ -216,8 +216,8 @@ class _SixScreenState extends State<SixScreen> {
                                 const SizedBox(
                                   height: 14,
                                 ),
-                                Row(
-                                  children: const [
+                                const Row(
+                                  children: [
                                     SizedBox(
                                       width: 08,
                                     ),
@@ -304,8 +304,8 @@ class _SixScreenState extends State<SixScreen> {
                                 const SizedBox(
                                   height: 14,
                                 ),
-                                Row(
-                                  children: const [
+                                const Row(
+                                  children: [
                                     SizedBox(
                                       width: 08,
                                     ),
@@ -392,8 +392,8 @@ class _SixScreenState extends State<SixScreen> {
                                 const SizedBox(
                                   height: 14,
                                 ),
-                                Row(
-                                  children: const [
+                                const Row(
+                                  children: [
                                     SizedBox(
                                       width: 08,
                                     ),

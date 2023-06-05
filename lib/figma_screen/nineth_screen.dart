@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:new_figma_screen/common%20widget/Shose_container.dart';
 import 'package:new_figma_screen/common%20widget/price.dart';
+import 'package:new_figma_screen/common%20widget/selection.dart';
+import 'package:new_figma_screen/common%20widget/shose_two.dart';
 
 class NinethScreen extends StatefulWidget {
   const NinethScreen({Key? key}) : super(key: key);
@@ -16,17 +18,17 @@ class _NinethScreenState extends State<NinethScreen> {
 
   List<Map<String, dynamic>> textList = [
     {
-      "image": "assets/images9/shose2.png",
+      "image": "assets/images9/sh2.png",
       "title": "Nike Air Force 1 ‘07",
       "name": "Revolutionary sneakers",
     },
     {
-      "image": "assets/images9/shose2.png",
+      "image": "assets/images9/sh2.png",
       "title": "Nike Air Force 1 ‘07",
       "name": "Revolutionary sneakers",
     },
     {
-      "image": "assets/images9/shose2.png",
+      "image": "assets/images9/sh2.png",
       "title": "Nike Air Force 1 ‘07",
       "name": "Revolutionary sneakers",
     },
@@ -38,24 +40,52 @@ class _NinethScreenState extends State<NinethScreen> {
   ];
   List<Map<String, dynamic>> imageList = [
     {
-      "image": "assets/images9/Shose3.png",
+      "image": "assets/images9/Sh1.png",
       "title": "Nike Air Max 97",
       "name": "Innovative and comfortable",
+      "price": "\$148",
+      "percentage": "15%",
     },
     {
-      "image": "assets/images9/Shose3.png",
+      "image": "assets/images9/Sh1.png",
       "title": "Nike Air Max 97",
       "name": "Innovative and comfortable",
+      "price": "\$140",
+      "percentage": "\$30",
     },
     {
-      "image": "assets/images9/Shose3.png",
+      "image": "assets/images9/Sh1.png",
       "title": "Nike Air Max 97",
       "name": "Innovative and comfortable",
+      "price": "\$153",
+      "percentage": "10%",
     },
     {
       "image": "assets/images9/search3.png",
       "title": "Explore more",
       "name": "Innovative and comfortable",
+    },
+  ];
+  List<Map<String, dynamic>> dataList = [
+    {
+      "image": "assets/images9/Shose5.png",
+      "title": "Nike Court Vision Mid",
+      "name": "Vintage and retro",
+    },
+    {
+      "image": "assets/images9/Shose5.png",
+      "title": "Nike Court Vision Mid",
+      "name": "Vintage and retro",
+    },
+    {
+      "image": "assets/images9/Shose5.png",
+      "title": "Nike Court Vision Mid",
+      "name": "Vintage and retro",
+    },
+    {
+      "image": "assets/images9/search3.png",
+      "title": "Explore more",
+      "name": "Vintage and retro",
     },
   ];
 
@@ -328,12 +358,14 @@ class _NinethScreenState extends State<NinethScreen> {
               const SizedBox(
                 height: 20,
               ),
-              Container(
+              SizedBox(
                 height: 388,
-                child: ListView.builder(
+                child: ListView.separated(
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
                   itemCount: textList.length,
+                  separatorBuilder: (context, index) =>
+                      const SizedBox(width: 30),
                   padding: const EdgeInsets.only(left: 14),
                   itemBuilder: (context, index) => Container(
                     // height: 388,
@@ -345,66 +377,92 @@ class _NinethScreenState extends State<NinethScreen> {
                         color: const Color(0xFFCCCCCC),
                       ),
                     ),
-                    child: Column(
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Image.asset(
-                              textList[index]["image"],
-                              width: 224,
-                              height: 195,
-                            ),
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 15,
-                            ),
-                            Text(
-                              textList[index]["title"],
-                              style: const TextStyle(
-                                  fontFamily: "Sofia Sans",
-                                  fontWeight: FontWeight.bold,
-                                  color: Color(0xFFEEEEEE),
-                                  fontSize: 24),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(
-                          height: 07,
-                        ),
-                        const Row(
-                          children: [
-                            SizedBox(
-                              width: 15,
-                            ),
-                            Shose_Container(
-                              name: "\$350",
-                            ),
-                          ],
-                        ),
-                        const SizedBox(
-                          height: 20,
-                        ),
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 15,
-                            ),
-                            Text(
-                              textList[index]["name"],
-                              style: const TextStyle(
-                                  fontFamily: "Sofia Sans",
-                                  fontWeight: FontWeight.w400,
-                                  fontSize: 20,
-                                  color: Color(0xFFCCCCCC)),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
+                    child: index == 3
+                        ? const Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.search,
+                                size: 64,
+                                color: Color(0xFFFFFFFF),
+                              ),
+                              SizedBox(
+                                height: 08,
+                              ),
+                              Text(
+                                "Explore More",
+                                style: TextStyle(
+                                  fontFamily: "SofiaSans",
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.w700,
+                                  color: Color(0xFFFFFFFF),
+                                ),
+                              ),
+                            ],
+                          )
+                        : Column(
+                            children: [
+                              const SizedBox(
+                                height: 11,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Image.asset(
+                                    textList[index]["image"],
+                                    width: 224,
+                                    height: 235,
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  const SizedBox(
+                                    width: 15,
+                                  ),
+                                  Text(
+                                    textList[index]["title"],
+                                    style: const TextStyle(
+                                        fontFamily: "Sofia Sans",
+                                        fontWeight: FontWeight.bold,
+                                        color: Color(0xFFEEEEEE),
+                                        fontSize: 24),
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(
+                                height: 07,
+                              ),
+                              const Row(
+                                children: [
+                                  SizedBox(
+                                    width: 15,
+                                  ),
+                                  Shose_Container(
+                                    name: "\$350",
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(
+                                height: 20,
+                              ),
+                              Row(
+                                children: [
+                                  const SizedBox(
+                                    width: 15,
+                                  ),
+                                  Text(
+                                    textList[index]["name"],
+                                    style: const TextStyle(
+                                        fontFamily: "Sofia Sans",
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 20,
+                                        color: Color(0xFFCCCCCC)),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
                   ),
                 ),
               ),
@@ -448,12 +506,14 @@ class _NinethScreenState extends State<NinethScreen> {
               const SizedBox(
                 height: 20,
               ),
-              Container(
+              SizedBox(
                 height: 388,
-                child: ListView.builder(
+                child: ListView.separated(
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
                   itemCount: imageList.length,
+                  separatorBuilder: (context, index) =>
+                      const SizedBox(width: 30),
                   padding: const EdgeInsets.only(left: 14),
                   itemBuilder: (context, index) => Container(
                     // height: 388,
@@ -465,64 +525,90 @@ class _NinethScreenState extends State<NinethScreen> {
                         color: const Color(0xFFCCCCCC),
                       ),
                     ),
-                    child: Column(
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Image.asset(
-                              imageList[index]["image"],
-                              width: 224,
-                              height: 195,
-                            ),
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 15,
-                            ),
-                            Text(
-                              imageList[index]["title"],
-                              style: const TextStyle(
-                                  fontFamily: "Sofia Sans",
-                                  fontWeight: FontWeight.bold,
-                                  color: Color(0xFFEEEEEE),
-                                  fontSize: 24),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(
-                          height: 07,
-                        ),
-                        const Row(
-                          children: [
-                            SizedBox(
-                              width: 15,
-                            ),
-                            Price(name: "\$170  \$148", title: "15%"),
-                          ],
-                        ),
-                        const SizedBox(
-                          height: 20,
-                        ),
-                        Row(
-                          children: [
-                            const SizedBox(
-                              width: 15,
-                            ),
-                            Text(
-                              imageList[index]["name"],
-                              style: const TextStyle(
-                                  fontFamily: "Sofia Sans",
-                                  fontWeight: FontWeight.w400,
-                                  fontSize: 20,
-                                  color: Color(0xFFCCCCCC)),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
+                    child: index == 3
+                        ? const Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.search,
+                                size: 64,
+                                color: Color(0xFFFFFFFF),
+                              ),
+                              SizedBox(
+                                height: 08,
+                              ),
+                              Text(
+                                "Explore More",
+                                style: TextStyle(
+                                  fontFamily: "SofiaSans",
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.w700,
+                                  color: Color(0xFFFFFFFF),
+                                ),
+                              ),
+                            ],
+                          )
+                        : Column(
+                            children: [
+                              const SizedBox(
+                                height: 11,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Image.asset(
+                                    imageList[index]["image"],
+                                    width: 224,
+                                    height: 235,
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  const SizedBox(
+                                    width: 15,
+                                  ),
+                                  Text(
+                                    imageList[index]["title"],
+                                    style: const TextStyle(
+                                        fontFamily: "Sofia Sans",
+                                        fontWeight: FontWeight.bold,
+                                        color: Color(0xFFEEEEEE),
+                                        fontSize: 24),
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(
+                                height: 07,
+                              ),
+                              const Row(
+                                children: [
+                                  SizedBox(
+                                    width: 15,
+                                  ),
+                                  Price(name: "\$170  \$148", title: "15%"),
+                                ],
+                              ),
+                              const SizedBox(
+                                height: 20,
+                              ),
+                              Row(
+                                children: [
+                                  const SizedBox(
+                                    width: 15,
+                                  ),
+                                  Text(
+                                    imageList[index]["name"],
+                                    style: const TextStyle(
+                                        fontFamily: "Sofia Sans",
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 20,
+                                        color: Color(0xFFCCCCCC)),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
                   ),
                 ),
               ),
@@ -622,6 +708,198 @@ class _NinethScreenState extends State<NinethScreen> {
                     ),
                   ),
                 ],
+              ),
+              const SizedBox(
+                height: 35,
+              ),
+              const Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text(
+                    "Just in",
+                    style: TextStyle(
+                        fontSize: 22,
+                        color: Color(0xFFFFFFFF),
+                        fontWeight: FontWeight.bold,
+                        fontFamily: "Sofia Sans"),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 08,
+              ),
+              const Row(
+                children: [
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text(
+                    "Fresh and new",
+                    style: TextStyle(
+                        fontSize: 16,
+                        color: Color(0xFFCCCCCC),
+                        fontWeight: FontWeight.w400,
+                        fontFamily: "Sofia Sans"),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              SizedBox(
+                height: 388,
+                child: ListView.separated(
+                  shrinkWrap: true,
+                  scrollDirection: Axis.horizontal,
+                  itemCount: dataList.length,
+                  padding: const EdgeInsets.only(left: 14),
+                  separatorBuilder: (context, index) =>
+                      const SizedBox(width: 30),
+                  itemBuilder: (context, index) => Container(
+                    // height: 388,
+                    width: 274,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        width: 01,
+                        color: const Color(0xFFCCCCCC),
+                      ),
+                    ),
+                    child: index == 3
+                        ? const Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.search,
+                                size: 64,
+                                color: Color(0xFFFFFFFF),
+                              ),
+                              SizedBox(
+                                height: 08,
+                              ),
+                              Text(
+                                "Explore More",
+                                style: TextStyle(
+                                  fontFamily: "SofiaSans",
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.w700,
+                                  color: Color(0xFFFFFFFF),
+                                ),
+                              ),
+                            ],
+                          )
+                        : Column(
+                            children: [
+                              const SizedBox(
+                                height: 11,
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Image.asset(
+                                    dataList[index]["image"],
+                                    width: 224,
+                                    height: 235,
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  const SizedBox(
+                                    width: 15,
+                                  ),
+                                  Text(
+                                    dataList[index]["title"],
+                                    style: const TextStyle(
+                                        fontFamily: "Sofia Sans",
+                                        fontWeight: FontWeight.bold,
+                                        color: Color(0xFFEEEEEE),
+                                        fontSize: 24),
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(
+                                height: 07,
+                              ),
+                              const Row(
+                                children: [
+                                  SizedBox(
+                                    width: 15,
+                                  ),
+                                  Shose_Two(name: "\$64", title: "New"),
+                                ],
+                              ),
+                              const SizedBox(
+                                height: 20,
+                              ),
+                              Row(
+                                children: [
+                                  const SizedBox(
+                                    width: 15,
+                                  ),
+                                  Text(
+                                    dataList[index]["name"],
+                                    style: const TextStyle(
+                                        fontFamily: "Sofia Sans",
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 20,
+                                        color: Color(0xFFCCCCCC)),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 40,
+              ),
+              const Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Text(
+                    "Shop by tag",
+                    style: TextStyle(
+                        fontSize: 22,
+                        color: Color(0xFFFFFFFF),
+                        fontWeight: FontWeight.bold,
+                        fontFamily: "Sofia Sans"),
+                  ),
+                ],
+              ),
+              const SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                physics: AlwaysScrollableScrollPhysics(),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Selection(
+                      name: "New",
+                    ),
+                    Selection(
+                      name: "Basketball",
+                    ),
+                    Selection(
+                      name: "Running",
+                    ),
+                    Selection(
+                      name: "Casual",
+                    ),
+                    Selection(
+                      name: "Hiking",
+                    ),
+                    Selection(
+                      name: "View more",
+                    ),
+                  ],
+                ),
               ),
             ],
           ),

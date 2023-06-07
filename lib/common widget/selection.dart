@@ -8,11 +8,10 @@ class Selection extends StatelessWidget {
     return Row(
       children: [
         Container(
-          height: 54,
-          width: 70,
           decoration: BoxDecoration(
               border: Border.all(width: 01, color: const Color(0xFFCCCCCC)),
               borderRadius: BorderRadius.circular(200)),
+          padding: const EdgeInsets.all(14),
           child: Text(
             name ?? "",
             style: const TextStyle(
@@ -20,6 +19,7 @@ class Selection extends StatelessWidget {
                 fontFamily: "Sofia Sans",
                 fontWeight: FontWeight.w400,
                 color: Color(0xFFFFFFFF)),
+            textAlign: TextAlign.center,
           ),
         ),
       ],

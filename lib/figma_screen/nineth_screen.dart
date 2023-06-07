@@ -874,32 +874,183 @@ class _NinethScreenState extends State<NinethScreen> {
                   ),
                 ],
               ),
+              const SizedBox(
+                height: 20,
+              ),
               const SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 physics: AlwaysScrollableScrollPhysics(),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    Padding(padding: EdgeInsets.all(10)),
                     Selection(
                       name: "New",
+                    ),
+                    SizedBox(
+                      width: 15,
                     ),
                     Selection(
                       name: "Basketball",
                     ),
+                    SizedBox(
+                      width: 15,
+                    ),
                     Selection(
                       name: "Running",
+                    ),
+                    SizedBox(
+                      width: 15,
                     ),
                     Selection(
                       name: "Casual",
                     ),
+                    SizedBox(
+                      width: 15,
+                    ),
                     Selection(
                       name: "Hiking",
+                    ),
+                    SizedBox(
+                      width: 15,
                     ),
                     Selection(
                       name: "View more",
                     ),
                   ],
                 ),
+              ),
+              const SizedBox(
+                height: 40,
+              ),
+              Row(
+                children: [
+                  const SizedBox(
+                    width: 16,
+                  ),
+                  Container(
+                    height: 197,
+                    width: 325,
+                    decoration: BoxDecoration(
+                        gradient: const LinearGradient(
+                          colors: [Color(0xFF02C0FC), Color(0xFFA3EDFD)],
+                        ),
+                        borderRadius: BorderRadius.circular(20)),
+                    child: Row(
+                      children: [
+                        const SizedBox(
+                          width: 18,
+                        ),
+                        const Column(
+                          children: [
+                            SizedBox(
+                              height: 35,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  "ADAPT",
+                                  style: TextStyle(
+                                      fontSize: 36,
+                                      fontWeight: FontWeight.w800,
+                                      fontFamily: "Futura Std",
+                                      color: Color(0xFF010100),
+                                      fontStyle: FontStyle.italic),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  "BB",
+                                  style: TextStyle(
+                                      fontSize: 36,
+                                      fontWeight: FontWeight.w800,
+                                      fontFamily: "Futura Std",
+                                      color: Color(0xFF010100),
+                                      fontStyle: FontStyle.italic),
+                                ),
+                              ],
+                            ),
+                            SizedBox(
+                              height: 10,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  "Powered for flying",
+                                  style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.w400,
+                                    fontFamily: "Sofia Sans",
+                                    color: Color(0xFF000000),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                        const SizedBox(
+                          width: 02,
+                        ),
+                        Column(
+                          children: [
+                            const SizedBox(
+                              height: 13,
+                            ),
+                            Image.asset("assets/images9/Sh3.png",
+                                height: 174, width: 147),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Explore more shoes",
+                    style: TextStyle(
+                        fontFamily: "Sofia Sans",
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24,
+                        color: Color(0xFFFFFFFF)),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    height: 54,
+                    width: 196,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(200),
+                      border:
+                          Border.all(width: 1, color: const Color(0xFFCCCCCC)),
+                    ),
+                    padding: const EdgeInsets.all(10),
+                    child: const Text("Shop gallery",
+                        style: TextStyle(
+                          color: Color(0xFFCCCCCC),
+                          fontFamily: "Sofia Sans",
+                          fontWeight: FontWeight.w400,
+                          fontSize: 20,
+                        ),
+                        textAlign: TextAlign.center),
+                  ),
+                ],
               ),
             ],
           ),

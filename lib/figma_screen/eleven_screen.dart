@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'eleven_second_screen.dart';
+
 class ElevenScreen extends StatefulWidget {
   const ElevenScreen({Key? key}) : super(key: key);
 
@@ -107,19 +109,29 @@ class _ElevenScreenState extends State<ElevenScreen> {
                       border: InputBorder.none),
                 ),
                 const SizedBox(height: 20),
-                Container(
-                  height: 55,
-                  width: double.infinity,
-                  alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                    color: const Color(0xFF76BA3F),
-                    borderRadius: BorderRadius.circular(15),
-                  ),
-                  child: const Text(
-                    "Continue",
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Color(0xFFFFFFFF),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ElevenSecondScreen(),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    height: 55,
+                    width: double.infinity,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF76BA3F),
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: const Text(
+                      "Continue",
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Color(0xFFFFFFFF),
+                      ),
                     ),
                   ),
                 ),

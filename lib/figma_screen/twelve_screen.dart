@@ -145,7 +145,7 @@ class _TwelveScreenState extends State<TwelveScreen> {
                         length: 2,
                         child: TabBar(
                           overlayColor:
-                              MaterialStatePropertyAll(Color(0xFF03091F)),
+                              const MaterialStatePropertyAll(Color(0xFF03091F)),
                           unselectedLabelColor: const Color(0xFF424242),
                           labelColor: const Color(0xFFFFFFFF),
 
@@ -402,7 +402,7 @@ class _TwelveScreenState extends State<TwelveScreen> {
                           crossAxisCount: 3,
                           crossAxisSpacing: 17,
                           mainAxisSpacing: 10,
-                          mainAxisExtent: 110,
+                          mainAxisExtent: 120,
                         ),
                         itemBuilder: (context, index) => Column(
                           children: [

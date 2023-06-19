@@ -19,11 +19,7 @@ class _ElevenSecondScreenState extends State<ElevenSecondScreen> {
             const Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                Icon(
-                  Icons.close,
-                  color: Color(0xFF4B5768),
-                  size: 30,
-                ),
+                CloseButton(color: Color(0xFF64748B)),
               ],
             ),
             const SizedBox(

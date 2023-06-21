@@ -11,7 +11,8 @@ class Button_Screen extends StatefulWidget {
 class _Button_ScreenState extends State<Button_Screen> {
   bool switchvalue = false;
   bool? checkBoxvalue = false;
-  bool? radioButton = true;
+  int? radioButton = 0;
+  int dropDownvalue = 2;
 
   @override
   Widget build(BuildContext context) {
@@ -81,16 +82,42 @@ class _Button_ScreenState extends State<Button_Screen> {
               Row(
                 children: [
                   Radio(
-                    value: radioButton,
-                    groupValue: "2",
+                    value: 1,
+                    groupValue: radioButton,
                     onChanged: (value) {
+                      radioButton = value;
                       setState(() {});
                     },
                   ),
                   Radio(
-                    value: radioButton,
-                    groupValue: "1",
+                    value: 2,
+                    groupValue: radioButton,
                     onChanged: (value) {
+                      radioButton = value;
+                      setState(() {});
+                    },
+                  ),
+                  Radio(
+                    value: 3,
+                    groupValue: radioButton,
+                    onChanged: (value) {
+                      radioButton = value;
+                      setState(() {});
+                    },
+                  ),
+                  Radio(
+                    value: 4,
+                    groupValue: radioButton,
+                    onChanged: (value) {
+                      radioButton = value;
+                      setState(() {});
+                    },
+                  ),
+                  Radio(
+                    value: 5,
+                    groupValue: radioButton,
+                    onChanged: (value) {
+                      radioButton = value;
                       setState(() {});
                     },
                   ),
@@ -99,7 +126,38 @@ class _Button_ScreenState extends State<Button_Screen> {
               ListTile(
                 onTap: () {},
                 title: const Text("hi"),
-                subtitle: const Icon(CupertinoIcons.gamecontroller_fill),
+                subtitle: const Text("hello"),
+                leading: Container(
+                  width: 50,
+                  height: 50,
+                  decoration: const BoxDecoration(
+                      shape: BoxShape.circle, color: Colors.blue),
+                ),
+                trailing: const Text("1:30"),
+              ),
+              PopupMenuButton(
+                itemBuilder: (context) => [
+                  PopupMenuItem(
+                    onTap: () {},
+                    value: 1,
+                    child: const Text("edit"),
+                  ),
+                  PopupMenuItem(
+                    onTap: () {},
+                    value: 2,
+                    child: const Text("Delete"),
+                  ),
+                  PopupMenuItem(
+                    onTap: () {},
+                    value: 3,
+                    child: const Text("Cut"),
+                  ),
+                  PopupMenuItem(
+                    onTap: () {},
+                    value: 4,
+                    child: const Text("copy"),
+                  ),
+                ],
               ),
             ],
           ),

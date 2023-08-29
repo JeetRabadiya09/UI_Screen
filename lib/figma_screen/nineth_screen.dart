@@ -4,6 +4,9 @@ import 'package:new_figma_screen/common%20widget/price.dart';
 import 'package:new_figma_screen/common%20widget/selection.dart';
 import 'package:new_figma_screen/common%20widget/shose_two.dart';
 
+import '../data/dummy_datanineth.dart';
+import '../model/to_do_modelnineth.dart';
+
 class NinethScreen extends StatefulWidget {
   const NinethScreen({Key? key}) : super(key: key);
 
@@ -12,82 +15,24 @@ class NinethScreen extends StatefulWidget {
 }
 
 class _NinethScreenState extends State<NinethScreen> {
-  Map mapdata = {
-    "text": "white color",
-  };
+  List<ToDoModelnineth> toDoModelListnineth = [];
+  List<ToDoModelnineth2> toDoModelListnineth2 = [];
+  List<ToDoModelnineth3> toDoModelListnineth3 = [];
 
-  List<Map<String, dynamic>> textList = [
-    {
-      "image": "assets/images9/sh2.png",
-      "title": "Nike Air Force 1 ‘07",
-      "name": "Revolutionary sneakers",
-    },
-    {
-      "image": "assets/images9/sh2.png",
-      "title": "Nike Air Force 1 ‘07",
-      "name": "Revolutionary sneakers",
-    },
-    {
-      "image": "assets/images9/sh2.png",
-      "title": "Nike Air Force 1 ‘07",
-      "name": "Revolutionary sneakers",
-    },
-    {
-      "image": "assets/images9/search3.png",
-      "title": "Explore more",
-      "name": "Revolutionary sneakers",
-    },
-  ];
-  List<Map<String, dynamic>> imageList = [
-    {
-      "image": "assets/images9/Sh1.png",
-      "title": "Nike Air Max 97",
-      "name": "Innovative and comfortable",
-      "price": "\$148",
-      "percentage": "15%",
-    },
-    {
-      "image": "assets/images9/Sh1.png",
-      "title": "Nike Air Max 97",
-      "name": "Innovative and comfortable",
-      "price": "\$140",
-      "percentage": "\$30",
-    },
-    {
-      "image": "assets/images9/Sh1.png",
-      "title": "Nike Air Max 97",
-      "name": "Innovative and comfortable",
-      "price": "\$153",
-      "percentage": "10%",
-    },
-    {
-      "image": "assets/images9/search3.png",
-      "title": "Explore more",
-      "name": "Innovative and comfortable",
-    },
-  ];
-  List<Map<String, dynamic>> dataList = [
-    {
-      "image": "assets/images9/Shose5.png",
-      "title": "Nike Court Vision Mid",
-      "name": "Vintage and retro",
-    },
-    {
-      "image": "assets/images9/Shose5.png",
-      "title": "Nike Court Vision Mid",
-      "name": "Vintage and retro",
-    },
-    {
-      "image": "assets/images9/Shose5.png",
-      "title": "Nike Court Vision Mid",
-      "name": "Vintage and retro",
-    },
-    {
-      "image": "assets/images9/search3.png",
-      "title": "Explore more",
-      "name": "Vintage and retro",
-    },
-  ];
+  @override
+  void initState() {
+    // TODO: implement initState
+    toDoModelListnineth = toDoDummyListnineth
+        .map((value) => ToDoModelnineth.fromJson(value))
+        .toList();
+    toDoModelListnineth2 = toDoDummyListnineth2
+        .map((value) => ToDoModelnineth2.fromJson(value))
+        .toList();
+    toDoModelListnineth3 = toDoDummyListnineth3
+        .map((value) => ToDoModelnineth3.fromJson(value))
+        .toList();
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -363,7 +308,7 @@ class _NinethScreenState extends State<NinethScreen> {
                 child: ListView.separated(
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
-                  itemCount: textList.length,
+                  itemCount: toDoDummyListnineth.length,
                   separatorBuilder: (context, index) =>
                       const SizedBox(width: 30),
                   padding: const EdgeInsets.only(left: 14),
@@ -409,7 +354,7 @@ class _NinethScreenState extends State<NinethScreen> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Image.asset(
-                                    textList[index]["image"],
+                                    toDoModelListnineth[index].image!,
                                     width: 224,
                                     height: 235,
                                   ),
@@ -421,7 +366,7 @@ class _NinethScreenState extends State<NinethScreen> {
                                     width: 15,
                                   ),
                                   Text(
-                                    textList[index]["title"],
+                                    toDoModelListnineth[index].title!,
                                     style: const TextStyle(
                                         fontFamily: "Sofia Sans",
                                         fontWeight: FontWeight.bold,
@@ -452,7 +397,7 @@ class _NinethScreenState extends State<NinethScreen> {
                                     width: 15,
                                   ),
                                   Text(
-                                    textList[index]["name"],
+                                    toDoModelListnineth[index].name!,
                                     style: const TextStyle(
                                         fontFamily: "Sofia Sans",
                                         fontWeight: FontWeight.w400,
@@ -511,7 +456,7 @@ class _NinethScreenState extends State<NinethScreen> {
                 child: ListView.separated(
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
-                  itemCount: imageList.length,
+                  itemCount: toDoModelListnineth2.length,
                   separatorBuilder: (context, index) =>
                       const SizedBox(width: 30),
                   padding: const EdgeInsets.only(left: 14),
@@ -557,7 +502,7 @@ class _NinethScreenState extends State<NinethScreen> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Image.asset(
-                                    imageList[index]["image"],
+                                    toDoModelListnineth2[index].image!,
                                     width: 224,
                                     height: 235,
                                   ),
@@ -569,7 +514,7 @@ class _NinethScreenState extends State<NinethScreen> {
                                     width: 15,
                                   ),
                                   Text(
-                                    imageList[index]["title"],
+                                    toDoModelListnineth2[index].title!,
                                     style: const TextStyle(
                                         fontFamily: "Sofia Sans",
                                         fontWeight: FontWeight.bold,
@@ -598,7 +543,7 @@ class _NinethScreenState extends State<NinethScreen> {
                                     width: 15,
                                   ),
                                   Text(
-                                    imageList[index]["name"],
+                                    toDoModelListnineth2[index].name!,
                                     style: const TextStyle(
                                         fontFamily: "Sofia Sans",
                                         fontWeight: FontWeight.w400,
@@ -754,7 +699,7 @@ class _NinethScreenState extends State<NinethScreen> {
                 child: ListView.separated(
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
-                  itemCount: dataList.length,
+                  itemCount: toDoModelListnineth3.length,
                   padding: const EdgeInsets.only(left: 14),
                   separatorBuilder: (context, index) =>
                       const SizedBox(width: 30),
@@ -800,7 +745,7 @@ class _NinethScreenState extends State<NinethScreen> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Image.asset(
-                                    dataList[index]["image"],
+                                    toDoModelListnineth3[index].image!,
                                     width: 224,
                                     height: 235,
                                   ),
@@ -812,7 +757,7 @@ class _NinethScreenState extends State<NinethScreen> {
                                     width: 15,
                                   ),
                                   Text(
-                                    dataList[index]["title"],
+                                    toDoModelListnineth3[index].title!,
                                     style: const TextStyle(
                                         fontFamily: "Sofia Sans",
                                         fontWeight: FontWeight.bold,
@@ -841,7 +786,7 @@ class _NinethScreenState extends State<NinethScreen> {
                                     width: 15,
                                   ),
                                   Text(
-                                    dataList[index]["name"],
+                                    toDoModelListnineth3[index].name!,
                                     style: const TextStyle(
                                         fontFamily: "Sofia Sans",
                                         fontWeight: FontWeight.w400,

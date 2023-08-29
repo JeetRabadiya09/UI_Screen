@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../data/dummy_datatenth.dart';
+import '../model/to_do_modeltenth.dart';
+
 class TenthScreen extends StatefulWidget {
   const TenthScreen({Key? key}) : super(key: key);
 
@@ -7,86 +10,39 @@ class TenthScreen extends StatefulWidget {
   State<TenthScreen> createState() => _TenthScreenState();
 }
 
-List<Map<String, dynamic>> gridview = [
-  {
-    "image": "assets/images10/1.png",
-    "title": "Store Name",
-  },
-  {
-    "image": "assets/images10/2.png",
-    "title": "Store Name",
-  },
-  {
-    "image": "assets/images10/3.png",
-    "title": "Store Name",
-  },
-  {
-    "image": "assets/images10/4.png",
-    "title": "Store Name",
-  },
-];
-List<Map<String, dynamic>> imageList = [
-  {
-    "image": "assets/images10/s1.png",
-    "title": "Product Name",
-  },
-  {
-    "image": "assets/images10/s2.png",
-    "title": "Product Name",
-  },
-  {
-    "image": "assets/images10/s3.png",
-    "title": "Product Name",
-  },
-  {
-    "image": "assets/images10/s4.png",
-    "title": "Product Name",
-  },
-  {
-    "image": "assets/images10/s5.png",
-    "title": "Product Name",
-  },
-  {
-    "image": "assets/images10/s6.png",
-    "title": "Product Name",
-  },
-  {
-    "image": "assets/images10/s7.png",
-    "title": "Product Name",
-  },
-  {
-    "image": "assets/images10/s8.png",
-    "title": "Product Name",
-  },
-];
-List<Map<String, dynamic>> imagetwoList = [
-  {
-    "image": "assets/images10/Star 14.png",
-  },
-  {
-    "image": "assets/images10/Star 14.png",
-  },
-  {
-    "image": "assets/images10/Star 14.png",
-  },
-  {
-    "image": "assets/images10/Star 14.png",
-  },
-  {
-    "image": "assets/images10/Star 14.png",
-  },
-  {
-    "image": "assets/images10/Star 14.png",
-  },
-  {
-    "image": "assets/images10/Star 14.png",
-  },
-  {
-    "image": "assets/images10/Star 14.png",
-  },
-];
-
 class _TenthScreenState extends State<TenthScreen> {
+  List<ToDoModeltenth> toDoModelListtenth = [];
+  List<ToDoModeltenth2> toDoModelListtenth2 = [];
+  List<ToDoModeltenth3> toDoModelListtenth3 = [];
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    toDoModelListtenth = toDoDummyListtenth
+        .map((value) => ToDoModeltenth.fromJson(value))
+        .toList();
+    toDoModelListtenth2 = toDoDummyListtenth2
+        .map((value) => ToDoModeltenth2.fromJson(value))
+        .toList();
+    toDoModelListtenth3 = toDoDummyListtenth3
+        .map((value) => ToDoModeltenth3.fromJson(value))
+        .toList();
+    super.initState();
+  }
+
+  //
+  // List<ToDoModelTwelve> toDoModelListData = [];
+  // List<ToDoModelData> toDoModelListTwo = [];
+  //
+  // @override
+  // void initState() {
+  //   // TODO: implement initState
+  //   toDoModelListData = listCount.map((value) => ToDoModelTwelve.fromJson(value)).toList();
+  //   toDoModelListTwo = listTwo.map((value) => ToDoModelData.fromJson(value)).toList();
+  //
+  //   super.initState();
+  // }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -141,7 +97,7 @@ class _TenthScreenState extends State<TenthScreen> {
                     mainAxisExtent: 50,
                   ),
                   itemBuilder: (context, index) => Image.asset(
-                    gridview[index]["image"],
+                    toDoModelListtenth[index].image!,
                   ),
                 ),
                 const SizedBox(
@@ -181,7 +137,7 @@ class _TenthScreenState extends State<TenthScreen> {
                         Stack(
                           children: [
                             Image.asset(
-                              imageList[index]["image"],
+                              toDoModelListtenth2[index].image!,
                               width: 167,
                               height: 168,
                             ),
@@ -215,7 +171,7 @@ class _TenthScreenState extends State<TenthScreen> {
                               width: 04,
                             ),
                             Image.asset(
-                              imagetwoList[index]["image"],
+                              toDoModelListtenth3[index].image!,
                               width: 15,
                               height: 15,
                             ),
@@ -223,7 +179,7 @@ class _TenthScreenState extends State<TenthScreen> {
                               width: 03,
                             ),
                             Image.asset(
-                              imagetwoList[index]["image"],
+                              toDoModelListtenth3[index].image!,
                               width: 15,
                               height: 15,
                             ),
@@ -231,7 +187,7 @@ class _TenthScreenState extends State<TenthScreen> {
                               width: 03,
                             ),
                             Image.asset(
-                              imagetwoList[index]["image"],
+                              toDoModelListtenth3[index].image!,
                               width: 15,
                               height: 15,
                             ),
@@ -239,7 +195,7 @@ class _TenthScreenState extends State<TenthScreen> {
                               width: 03,
                             ),
                             Image.asset(
-                              imagetwoList[index]["image"],
+                              toDoModelListtenth3[index].image!,
                               width: 15,
                               height: 15,
                             ),
@@ -247,7 +203,7 @@ class _TenthScreenState extends State<TenthScreen> {
                               width: 03,
                             ),
                             Image.asset(
-                              imagetwoList[index]["image"],
+                              toDoModelListtenth3[index].image!,
                               width: 15,
                               height: 15,
                             ),
@@ -273,7 +229,7 @@ class _TenthScreenState extends State<TenthScreen> {
                               width: 04,
                             ),
                             Text(
-                              imageList[index]["title"],
+                              toDoModelListtenth2[index].title!,
                               style: const TextStyle(
                                   color: Color(0xFF1E1E1E),
                                   fontWeight: FontWeight.w300,
